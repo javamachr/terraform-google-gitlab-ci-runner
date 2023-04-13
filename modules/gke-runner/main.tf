@@ -120,7 +120,7 @@ resource "kubernetes_secret" "cache_secret" {
 # set up gitlab runner using the deimos kubernetes gitlab runner module
 #-----------------------------------------------------------------------
 module "kubernetes_gitlab_runner" {
-  source  = "DeimosCloud/gitlab-runner/kubernetes"
+  source  = "github.com/javamachr/terraform-kubernetes-gitlab-runner"
   version = "~>1.4.0"
 
   release_name  = var.runner_release_name
