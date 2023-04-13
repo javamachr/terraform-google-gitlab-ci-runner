@@ -121,7 +121,6 @@ resource "kubernetes_secret" "cache_secret" {
 #-----------------------------------------------------------------------
 module "kubernetes_gitlab_runner" {
   source  = "github.com/javamachr/terraform-kubernetes-gitlab-runner"
-  version = "~>1.4.0"
 
   release_name  = var.runner_release_name
   chart_version = var.chart_version
